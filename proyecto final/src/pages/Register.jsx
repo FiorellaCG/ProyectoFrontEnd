@@ -1,9 +1,17 @@
 import React from 'react'
+import RegisterForm from '../components/Domain/RegisterForm'
+import '../styles/Register.css'
 
-function Register() {
+function Register(){
   return (
-    <div>Register</div>
-  )
+    <div className="register-page">
+      <div className="register-card">
+        <div className="form-grid">
+          <RegisterForm />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Register
+export default Register;

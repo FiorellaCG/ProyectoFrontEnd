@@ -21,7 +21,6 @@ function Routing() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/comentarios" element={<Comentarios />} />
         <Route path="/condimentos" element={<Condimentos />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/recetas" element={<Recetas />} />
         <Route path="/registro" element={<Register />} />

@@ -66,7 +66,7 @@ async function putDatos(endpoint, id, datos) {
 //Borrar datos
 async function eliminateDatos(id) {
     try {
-        const respuesta = await fetch(`http://localhost:3001/computadoras/${id}`, {
+        const respuesta = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" }
         });
@@ -81,4 +81,4 @@ async function eliminateDatos(id) {
     }
 }
 
-export { getDatos, postDatos, putDatos, eliminateDatos }
+export default { getDatos, postDatos, putDatos, eliminateDatos }

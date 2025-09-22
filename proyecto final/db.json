@@ -1,16 +1,21 @@
 {
-    "condimentos": {
+  "condimentos": [],
+  "recetas": [],
+  "usuarios": [
+    {
+      "id": "d9e5",
+      "nombre": "Fiorella",
+      "apellido": "Chaves",
+      "email": "fiochaves1303@gmail.com",
+      "contra": "12345"
     },
-
-    "recetas": {
-
-    },
-
-    "usuarios": {
-
-    }, 
-    "comentarios":{
-        
+     {
+      "id": "1",
+      "nombre": "Empacadora",
+      "apellido": "Guaria",
+      "email": "laguaria@gmail.com",
+      "contra": "12345"
     }
-
+  ],
+  "comentarios": []
 }

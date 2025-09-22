@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom"
+import '../../styles/Header.css'
 
 function Navbar() {
   return (
@@ -9,9 +10,9 @@ function Navbar() {
         <nav className="links">
           <NavLink to="/condimentos">Condimentos</NavLink>
           <NavLink to="/recetas">Recetas</NavLink>
-          <NavLink to="/about">Acerca</NavLink>
-          <NavLink to="/contacto">Contacto</NavLink>
-          <NavLink to="/admin">Admin</NavLink>
+          <NavLink to="/comentarios">Comentarios</NavLink>
+          <NavLink to="/about">Acerca de</NavLink>
+          <NavLink to="/login">Login</NavLink>
         </nav>
       </div>
     </header>
