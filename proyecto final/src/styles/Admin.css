@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.admin-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Centra solo el título y los botones */
+.admin-title,
+.admin-buttons {
+  text-align: center;
+}
+
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* La tarjeta del formulario NO debe centrar todo su contenido */
+.admin-content {
+  display: flex;
+  justify-content: center;  /* centra la tarjeta */
+}
+
+.register-card {
+  width: 720px;               /* ajusta según gusto */
+  max-width: 92vw;
+  text-align: left;           /* importante: quita centrado heredado */
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+/* Estructura del form */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* evita layouts raros si en otro lado era 2 columnas */
+  gap: 14px;
+}
+
+/* Campos bien alineados */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  margin: 0;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;                /* que ocupen todo el ancho de la tarjeta */
+  box-sizing: border-box;
+}
+
+/* Opcional: evita centrado forzado que venga de otras páginas */
+.admin-page .form-field,
+.admin-page .form-label,
+.admin-page .form-input,
+.admin-page textarea {
+  text-align: left;
+}
+
+.btn-option {
+  background-color: #b1839e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-option:hover {
+  background-color: #d6abc4;
+}

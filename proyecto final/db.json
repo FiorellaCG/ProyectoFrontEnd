@@ -1,5 +1,13 @@
 {
-  "condimentos": [],
+  "condimentos": [
+    {
+      "id": "9916",
+      "nombre": "Curcuma ",
+      "beneficios": "Es muy saludable",
+      "origen": "India",
+      "imagen": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/04/02/curcuma-fresca-rallada.jpeg"
+    }
+  ],
   "recetas": [],
   "usuarios": [
     {
@@ -9,13 +17,12 @@
       "email": "fiochaves1303@gmail.com",
       "contra": "12345"
     },
-     {
+    {
       "id": "1",
       "nombre": "Empacadora",
       "apellido": "Guaria",
       "email": "laguaria@gmail.com",
       "contra": "12345"
     }
-  ],
-  "comentarios": []
+  ]
 }
