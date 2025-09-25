@@ -15,7 +15,7 @@ function Footer() {
                 {/* WhatsApp */}
                 <div className="footer-col">
                     <p className="footer-titulo"><b>WhatsApp</b></p>
-                    <p>Numero: XXXX-XXXX</p>
+                    <p>Numero: 7015-0047</p>
                 </div>
 
                 {/* Email */}

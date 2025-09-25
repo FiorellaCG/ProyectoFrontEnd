@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import AdminIngreso from '../components/Domain/AdminIngreso';
 import '../styles/Admin.css';
+import CondimentoCarrusel from '../components/Domain/CondimentoCarrusel';
+import Condimentos from './Condimentos';
 
 function Admin() {
   const [tipo, setTipo] = useState(null); // null = no se eligió nada aún
@@ -9,7 +11,6 @@ function Admin() {
     <div className="admin-page">
       <h2 className="admin-title">Panel de Administración</h2>
 
-      {/* Botones de selección */}
       <div className="admin-buttons">
         <button className="btn-option" onClick={() => setTipo('condimentos')}>
           Administrar Condimentos
@@ -18,13 +19,15 @@ function Admin() {
           Administrar Recetas
         </button>
       </div>
-
-      {/* Render condicional del registro */}
       {tipo && (
         <div className="admin-content">
           <AdminIngreso tipo={tipo} />
         </div>
       )}
+      <br />
+     
+
+
     </div>
   );
 }

@@ -1,8 +1,11 @@
 import React from 'react'
+import RecetaCarrusel from '../components/Domain/RecetaCarrusel'
 
 function Recetas() {
   return (
-    <div>Recetas</div>
+    <div>
+      <RecetaCarrusel/>
+    </div>
   )
 }
 

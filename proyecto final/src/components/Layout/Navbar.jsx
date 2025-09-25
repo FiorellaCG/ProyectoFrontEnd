@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <header className="nav">
       <div className="container">
-        <Link to="/" className="brand">Condimentos la Guaria</Link>
+        <Link to="/home" className="brand">Condimentos la Guaria</Link>
         <nav className="links">
           <NavLink to="/condimentos">Condimentos</NavLink>
           <NavLink to="/recetas">Recetas</NavLink>

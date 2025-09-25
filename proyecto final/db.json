@@ -6,9 +6,49 @@
       "beneficios": "Es muy saludable",
       "origen": "India",
       "imagen": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/04/02/curcuma-fresca-rallada.jpeg"
+    },
+    {
+      "id": "dc7c",
+      "nombre": "Anis estrella",
+      "beneficios": "Propiedades digestivas: Ayuda a mejorar la digestión y aliviar cólicos estomacales. \nAntibacteriano y antiviral: Tiene propiedades que combaten bacterias y virus, lo que puede ayudar a fortalecer el sistema inmunológico. \nAlivio de la ansiedad y el estrés: Puede contribuir a reducir la ansiedad y el estrés. \nExpectorante: Ayuda a abrir las vías respiratorias y aliviar síntomas de resfriados.\nUso culinario: Es un ingrediente popular en la gastronomía, utilizado en diversas recetas y tisanas.",
+      "origen": "China y Vietnam",
+      "imagen": "https://ciudadtrendy.mx/wp-content/uploads/2020/11/Anis-estrellado-origen-usos-beneficios-2.jpg"
+    },
+    {
+      "id": "4cd3",
+      "nombre": "Linaza",
+      "beneficios": "Mejora la Digestión: La linaza es rica en fibra, lo que ayuda a aumentar el volumen de las heces y estimula el movimiento intestinal, facilitando la evacuación y combatiendo el estreñimiento. \nSalud Cardiovascular: Contiene ácidos grasos omega-3, especialmente ácido alfa-linolénico (ALA), que contribuyen a la salud del corazón al reducir la inflamación y mejorar los niveles de colesterol. \nControl del Colesterol: La fibra soluble en la linaza ayuda a reducir la absorción de grasas en el intestino y disminuye la producción de colesterol en el hígado, lo que puede ayudar a reducir los niveles de colesterol LDL (colesterol \"malo\") y triglicéridos. \nRegulación de la Glucosa: Gracias a su alto contenido de fibra, la linaza puede ayudar a controlar los niveles de azúcar en sangre, lo que es beneficioso para personas con diabetes. \nPropiedades Antioxidantes: La linaza es rica en lignanos, que son compuestos con propiedades antioxidantes que pueden ayudar a reducir el riesgo de enfermedades crónicas, como el cáncer y enfermedades cardíacas. \nControl del Peso: El consumo de linaza puede aumentar la sensación de saciedad, lo que puede ayudar a reducir la ingesta calórica y contribuir a la pérdida de peso.",
+      "origen": "Europa y el Cercano Oriente ",
+      "imagen": "https://www.vidasaludable.fit/wp-content/uploads/2019/12/linaza.webp"
+    },
+    {
+      "id": "65d9",
+      "nombre": "Canela",
+      "beneficios": "Control de la Diabetes: La canela puede ayudar a regular los niveles de azúcar en sangre al mejorar la sensibilidad a la insulina. Esto es especialmente beneficioso para personas con prediabetes o diabetes tipo 2, ya que puede reducir los picos de glucosa después de las comidas. \nPropiedades Antioxidantes: Contiene compuestos antioxidantes, como los polifenoles, que ayudan a combatir el daño celular causado por los radicales libres. Esto puede contribuir a la prevención de enfermedades crónicas y al bienestar general. \nSalud Cardiovascular: La canela puede disminuir los niveles de colesterol LDL (colesterol \"malo\") y triglicéridos, mientras que eleva el colesterol HDL (colesterol \"bueno\"). Esto ayuda a prevenir enfermedades del corazón y mejora la salud arterial. \nPropiedades Antiinflamatorias: Los compuestos de la canela pueden ayudar a reducir la inflamación en el cuerpo, lo que es beneficioso para combatir enfermedades inflamatorias y mejorar la salud general. \nMejora de la Digestión: La canela puede ayudar a aliviar problemas digestivos, como la indigestión y los gases, gracias a sus propiedades carminativas y antiulcerosas. \nEfectos Antimicrobianos: La canela tiene propiedades que pueden combatir bacterias y hongos, lo que la convierte en un aliado para la salud bucal y la prevención de infecciones",
+      "origen": "Sri Lanka (Ceilan)",
+      "imagen": "https://spiceandcolour.com/wp-content/uploads/2021/03/1_Canela.jpg"
     }
   ],
-  "recetas": [],
+  "recetas": [
+    {
+      "id": "fefb",
+      "titulo": "Arroz con cúrcuma ",
+      "descripcion": "Preparación\nEstas cantidades están especialmente pensadas para 2 personas. Si tienes más comensales, solo tienes que aumentarlas.\nPor otro lado, para las verduras puedes elegir aquellas que más te gusten, en esta ocasión nos hemos decantado por un acompañamiento muy básico, pero puedes incluso añadirle frutos secos como anacardos o cacahuetes tostados sin sal que le darán un toque diferente.\nPara esta receta hemos utilizado arroz de grano largo tipo basmati que es más aromático, pero puedes utilizar cualquier otro que tengas a mano.\nVamos a ello. En un cazo pon a calentar un chorrito de aceite de oliva virgen extra y sofríe el arroz un par de minutos removiendo continuamente. A esto se llama nacarar el arroz.\nPasado ese tiempo, añade el agua según indicaciones del fabricante del arroz porque depende del tipo utilizado. Nosotros añadiremos por 1 taza de arroz basmati, 1,25 tazas de agua.\nDespués añade la pastilla de caldo, una pizca de sal, la cúrcuma y el laurel.\nEl tiempo de cocción dependerá del tipo de arroz utilizado, pero por lo general oscila entre 17 y 20 minutos.\nMientras se cuece el arroz, lava bien el puerro quitando la tierra que pueda tener y pícalo.\nPon aceite en una sartén honda y pocha el puerro despacito y con cuidado de que no se queme.\nPica finita la zanahoria y añádela a la sartén. Sofríe unos minutos, pero déjala un poco al dente para tener una textura crujiente.\nRalla el calabacín y el tomate y añádelos a la sartén junto con los pimientos cortados en tiritas hasta que se haga todo bien.\nCuando esté listo, añade el arroz que ya estará cocido, mezcla todo despacio y deja unos minutos.\nEl arroz con cúrcuma y verduras es un plato que te puede valer tanto como aperitivo como para acompañamiento durante la comida. Una receta muy natural y ecológica que te brindará vitaminas y propiedades más que interesante para tu dieta.",
+      "imagen": "https://www.hola.com/horizon/landscape/f05f84434cd4-arroz-curcuma-t.jpg"
+    },
+    {
+      "id": "c376",
+      "titulo": "Galletas de avena con canela",
+      "descripcion": "1. Prepara la base seca:\nEn un recipiente grande, mezcla:\n\n2 tazas de avena en hojuelas, 1 taza de harina integral, 1 cucharadita de polvo para hornear, 1/2 cucharadita de bicarbonato de sodio, 1 cucharada de canela en polvo, y una pizca de sal.\nRemueve con una cuchara para asegurarte de que todo quede bien combinado. Este paso es crucial para que la canela se distribuya uniformemente.\n\n2. Prepara la mezcla húmeda:\nEn otro bol mediano, combina los ingredientes húmedos:\n\n2 huevos, 1/2 taza de azúcar moreno, 1/4 taza de miel, 1/2 taza de mantequilla derretida o aceite de coco, 1/4 taza de leche (puede ser vegetal), y 1 cucharadita de extracto de vainilla.\nBate todo con un tenedor o batidor manual hasta que se forme una mezcla homogénea y ligeramente espesa.\n\n3. Une ambas mezclas:\nAñade la mezcla húmeda al bol con los ingredientes secos. Usa una espátula o cuchara de madera para integrar todo. La masa será algo pegajosa, pero asegúrate de que no queden áreas secas.\n\n4. Forma las galletas:\nPrecalienta el horno a 180 °C (350 °F).\nCon una cuchara, toma porciones pequeñas de masa y colócalas sobre una bandeja cubierta con papel pergamino. Dale forma redonda y aplana ligeramente con la parte posterior de la cuchara.\n\n5. Hornea:\nColoca la bandeja en el horno y cocina las galletas durante 12-15 minutos. Vigila los bordes: deben dorarse ligeramente, mientras que el centro puede mantenerse un poco blando.\n\n6. Deja enfriar:\nRetira del horno y coloca las galletas sobre una rejilla para enfriar. Esto permite que adquieran su textura final.\n\n7. Disfruta:\nSirve tus galletas tibias con un café, té o un vaso de leche fría.",
+      "imagen": "https://radiomitre-la100-prod.cdn.arcpublishing.com/resizer/_WyLaJiSEQbkPfzlSIekB6XFzdw=/1440x0/smart/filters:quality(85):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/radiomitre/KVE2XQDQZBEPFK7VBP6RBSTTWU.jpg"
+    },
+    {
+      "id": "3403",
+      "titulo": "Pan sin gluten de linaza",
+      "descripcion": "Preparación:\n\nEn un recipiente amplio bate las claras hasta obtener el punto de nieve, es decir, hasta que tengan una consistencia firme. Para lograrlo, comienza batiendo a velocidad baja y auméntanla conforme crezca su volmen; cuando formen picos firmes, estarán.\nAgrega la linaza molida y bate hasta integrar.\nVierte la mezcla en un molde rectangular engrasado y mete al horno precalentado a 180°C.\nHornea durante 30 minutos o hasta que esté cocido y ligeramente dorado en la superficie.\nDeja atemperar y desmolda. Disfruta tu pan de linaza sin gluten como lo harías con otro pan de caja.",
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/images/2023/06/pan-de-linaza.jpg"
+    }
+  ],
   "usuarios": [
     {
       "id": "d9e5",

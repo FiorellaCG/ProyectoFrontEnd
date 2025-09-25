@@ -1,11 +1,16 @@
 import React from 'react'
 import Footer from '../components/Layout/Footer'
+import CondimentoCarrusel from '../components/Domain/CondimentoCarrusel'
+import RecetaCarrusel from '../components/Domain/RecetaCarrusel'
 
 function Home() {
   return (
     <div>
-        <p>Hola soy home</p>
-
+      <br /><br /><br />
+      <CondimentoCarrusel/>
+      <br /><br /><br />
+      <RecetaCarrusel/>
+      <br /><br /><br />
     </div>
   )
 }

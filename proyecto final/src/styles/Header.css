@@ -53,7 +53,9 @@ header.nav .links{
   overflow-x: auto;
   scrollbar-width: none;  /* Firefox */
 }
-header.nav .links::-webkit-scrollbar{ display: none; } /* Chrome/Edge */
+header.nav .links::-webkit-scrollbar{ 
+  display: none; 
+} 
 
 /* Estilo de cada link */
 header.nav .links a{
