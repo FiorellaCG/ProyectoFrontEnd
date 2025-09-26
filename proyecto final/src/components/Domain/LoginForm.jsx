@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Services from '../../services/Services';
-import '../../styles/Login.css'   
+import '../../styles/Login.css';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
@@ -15,46 +15,52 @@ export default function LoginForm() {
     setError('');
 
     const correo = email.trim();
-    if (!correo || !contra) {
+    const pass = contra.trim();
+
+    if (!correo || !pass) {
       setError('Completa email y contraseña.');
+      return;
+    }
+
+    // (Opcional) validación de formato de email para evitar búsquedas inútiles
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!EMAIL_RE.test(correo)) {
+      setError('Email o contraseña incorrectos.');
       return;
     }
 
     try {
       setCargando(true);
 
-      // Busca por email exacto (regex ^correo$) y limita a 1
-      const endpoint = `usuarios?email_like=${encodeURIComponent(`^${correo}$`)}&_limit=1`;
-      const lista = await Services.getDatos(endpoint);
-      const user = Array.isArray(lista) ? lista[0] : null;
+      // Intenta filtrar por email Y contraseña en el servidor (match exacto)
+      const endpoint = `usuarios?email=${encodeURIComponent(correo)}&contra=${encodeURIComponent(pass)}&_limit=5`;
+      let lista = await Services.getDatos(endpoint);
 
-      // Si no existe → ve a registro con prefill
+      // Filtramos en cliente
+      if (!Array.isArray(lista)) lista = [];
+      const user =
+        lista.find(u => u?.email === correo && u?.contra === pass) || null;
+
       if (!user) {
-        navigate('/register', { replace: true, state: { emailPrefill: correo } });
+        setError('Email o contraseña incorrectos.');
         return;
       }
 
-      // Contraseña incorrecta
-      if (user.contra !== contra) {
-        setError('Contraseña incorrecta.');
-        return;
-      }
+      // Guardar sesión
+      const rol = user.rol || 'user';
+      localStorage.setItem(
+        'authUser',
+        JSON.stringify({
+          id: user.id,
+          nombre: user.nombre,
+          apellido: user.apellido,
+          email: user.email,
+          rol,
+        })
+      );
 
-      // Éxito: guarda sesión simple
-      localStorage.setItem('authUser', JSON.stringify({
-        id: user.id,
-        nombre: user.nombre,
-        apellido: user.apellido,
-        email: user.email,
-        rol: user.rol || 'user',
-      }));
-
-      // Si es admin según DB → /admin; si no → /
-      if (user.rol === 'admin') {
-        navigate('/admin', { replace: true });
-      } else {
-        navigate('/', { replace: true });
-      }
+      // Redirección por rol (tu DB ya trae rol:"admin" para laguaria@gmail.com)
+      navigate(rol === 'admin' ? '/admin' : '/', { replace: true });
     } catch (err) {
       console.error(err);
       setError('No se pudo iniciar sesión. Intenta de nuevo.');

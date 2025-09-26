@@ -9,6 +9,7 @@ import Recetas from '../pages/Recetas';
 import Register from '../pages/Register';
 import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
+import Producto from '../pages/Producto';
 
 function Routing() {
   return (
@@ -24,8 +25,8 @@ function Routing() {
         <Route path="/login" element={<Login />} />
         <Route path="/recetas" element={<Recetas />} />
         <Route path="/registro" element={<Register />} />
-
-        {/*<Route path="/admin" element={<PrivateRoute><AdminDashboard/></PrivateRoute>} />*/}
+        <Route path="/producto/id" element={<Producto />} />
+        {/*<Route path="/admin" element={<PrivateRoute><Admin/></PrivateRoute>} />*/}
       </Routes>
       <Footer />
     </Router>

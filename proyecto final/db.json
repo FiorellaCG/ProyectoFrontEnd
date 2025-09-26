@@ -62,7 +62,8 @@
       "nombre": "Empacadora",
       "apellido": "Guaria",
       "email": "laguaria@gmail.com",
-      "contra": "12345"
+      "contra": "12345",
+      "rol":"admin"
     }
   ]
 }
