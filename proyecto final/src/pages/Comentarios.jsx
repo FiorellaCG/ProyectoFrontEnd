@@ -1,6 +1,7 @@
 import React from 'react'
 import Comment from '../components/Domain/Comment'
-import '../styles/Comentarios.css'
+import ComentariosVer from '../components/Domain/ComentariosVer'
+import '../styles/ComentariosVer.css'
 
 function Comentarios() {
   return ( 
@@ -8,6 +9,7 @@ function Comentarios() {
       <div className="register-card">
         <div className="form-grid">
           <Comment />
+          <ComentariosVer />
         </div>
       </div>
     </div>

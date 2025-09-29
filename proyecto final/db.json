@@ -47,6 +47,12 @@
       "titulo": "Pan sin gluten de linaza",
       "descripcion": "Preparación:\n\nEn un recipiente amplio bate las claras hasta obtener el punto de nieve, es decir, hasta que tengan una consistencia firme. Para lograrlo, comienza batiendo a velocidad baja y auméntanla conforme crezca su volmen; cuando formen picos firmes, estarán.\nAgrega la linaza molida y bate hasta integrar.\nVierte la mezcla en un molde rectangular engrasado y mete al horno precalentado a 180°C.\nHornea durante 30 minutos o hasta que esté cocido y ligeramente dorado en la superficie.\nDeja atemperar y desmolda. Disfruta tu pan de linaza sin gluten como lo harías con otro pan de caja.",
       "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/images/2023/06/pan-de-linaza.jpg"
+    },
+    {
+      "id": "53c0",
+      "titulo": "Te de canela",
+      "descripcion": "1. Calienta agua en una olla hasta que alcance el punto de ebullición.\n2. Agrega palitos de canela y especias si lo deseas.\n3. Deja hervir durante unos minutos.\n5. Apaga el fuego, tapa y deja reposar la infusión.\n6. Cuela la infusión y sirve caliente, añadiendo miel o limón al gusto.",
+      "imagen": "https://www.econsejos.com/wp-content/uploads/el-te-de-canela.jpg"
     }
   ],
   "usuarios": [
@@ -63,7 +69,22 @@
       "apellido": "Guaria",
       "email": "laguaria@gmail.com",
       "contra": "12345",
-      "rol":"admin"
+      "rol": "admin"
+    },
+    {
+      "id": "8aa4",
+      "nombre": "Luis",
+      "apellido": "Perez",
+      "email": "luis@gmail.com",
+      "contra": "123"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "5f29",
+      "titulo": "Quino con crudites",
+      "descripcion": "Lava la quinoa y escúrrela bien. Pon un cazo al fuego con el doble de agua salada que, de quinoa, y caliéntala hasta que llegue a ebullición.\nAñade la quinoa y cuécela a fuego medio y tapada durante 20 minutos; comprueba que no esté dura, y, si fuera así, prolonga la cocción unos minutos más. Pásala a un escurridor y deja que se seque bien del agua de cocción.\nPasa la quinoa a una ensaladera, añade la zanahoria, los pimientos, la cebolla y el apio, y salpimienta.\nRiega con un chorrito de aceite, espolvorea con las hierbas y remueve con cuidado; sirve enseguida.",
+      "autor": "luis@gmail.com"
     }
   ]
 }

@@ -8,6 +8,8 @@ function Comment({ onSaved })  {
   const [titulo, setTitulo] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [errores, setErrores] = useState({});
+  const estadoUsuario = localStorage.getItem("authUser")
+  const usuario = JSON.parse(localStorage.getItem("authUser"))
 
   const validar = () => {
     const e = {};
@@ -21,7 +23,11 @@ function Comment({ onSaved })  {
     if (!validar()) return; // no sigue si hay errores
 
     try {
-      const nuevoComentario = { titulo, descripcion };
+      const nuevoComentario = { 
+        titulo, 
+        descripcion,
+        autor: usuario?.email
+       };
       await Services.postDatos('comentarios', nuevoComentario);
       setTitulo(''); 
       setDescripcion(''); 
@@ -38,13 +44,10 @@ function Comment({ onSaved })  {
       <h2 className="register-title">Comentarios</h2>
 
       <div className="form-field">
+        <p>Ingrese una receta a compartir</p>
         <label className="form-label" htmlFor="titulo">Título</label>
-        <input
-          id="titulo"
-          className={`form-input ${errores.titulo ? 'is-invalid' : ''}`}
-          type="text"
-          placeholder="Ingrese un título a la receta"
-          value={titulo}
+        <input id="titulo" className={`form-input ${errores.titulo ? 'is-invalid' : ''}`}
+          type="text" placeholder="Ingrese un título a la receta" value={titulo}
           onChange={(e)=>setTitulo(e.target.value)}
           aria-invalid={!!errores.titulo}
           aria-describedby={errores.titulo ? 'error-titulo' : undefined}
@@ -54,8 +57,7 @@ function Comment({ onSaved })  {
 
       <div className="form-field">
         <label className="form-label" htmlFor="descripcion">Descripción</label>
-        <textarea
-          id="descripcion"
+        <textarea id="descripcion"
           className={`form-input form-textarea ${errores.descripcion ? 'is-invalid' : ''}`}
           placeholder="Ingrese los pasos para realizar la receta"
           value={descripcion}
@@ -64,9 +66,13 @@ function Comment({ onSaved })  {
           aria-describedby={errores.descripcion ? 'error-descripcion' : undefined}
         />
         {errores.descripcion && <p id="error-descripcion" className="error">{errores.descripcion}</p>}
+        <p className={`${localStorage.getItem('authUser') != null ? "inactivo" : "activo"}`}>
+          Inicia sesión para agregar un comentario
+        </p>
       </div>
 
-      <button className="btn-submit" onClick={cargarComentarios}>Enviar </button>
+      <button  className={`btn-submit ${localStorage.getItem('authUser') != null ? "activo" : "inactivo"}`} 
+      onClick={cargarComentarios}>Enviar </button>
     </>
   );
 }

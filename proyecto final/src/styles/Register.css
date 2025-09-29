@@ -95,6 +95,13 @@ body {
     cursor: pointer;
     transition: filter .15s, background .15s;
 }
+.inactivo{
+    visibility: hidden;
+}
+
+.activo{
+    visibility: visible;
+}
 
 .btn-submit:hover {
     background: var(--primary-hover);

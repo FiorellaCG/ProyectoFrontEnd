@@ -22,7 +22,7 @@ export default function LoginForm() {
       return;
     }
 
-    // (Opcional) validación de formato de email para evitar búsquedas inútiles
+    // Validación de formato de email para evitar búsquedas inútiles
     const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!EMAIL_RE.test(correo)) {
       setError('Email o contraseña incorrectos.');
