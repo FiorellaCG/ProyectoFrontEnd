@@ -6,8 +6,9 @@ import '../styles/Carrusel.css'
 function Condimentos() {
   return (
     <div>
+      <br /><br /><br />
       <CondimentoCarrusel/>
-
+      <br /><br /><br />
     </div>
   )
 }

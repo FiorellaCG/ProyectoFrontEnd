@@ -1,8 +1,13 @@
 import React from 'react'
+import CondimentoPage from '../components/Domain/CondimentoPage'
+import '../styles/CondimentosPage.css'
+
 
 function Producto() {
   return (
-    <div>Producto</div>
+    <div>
+      <CondimentoPage/>
+    </div>
   )
 }
 

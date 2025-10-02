@@ -1,0 +1,124 @@
+.lista-crud {
+  max-width: 900px;
+  margin: 40px auto;       
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.titulo-crud {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.lista-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-crud {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.item-crud:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-contenido {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.item-texto {
+  flex: 1;
+}
+
+.item-nombre {
+  font-size: 20px;
+  color: #222;
+}
+
+.item-pequeno {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.beneficios {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Edicion de iagenes */
+.item-imagen img {
+  width: 120px;       
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; 
+}
+
+/* Botones de editar y eliminar */
+.botones-crud {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnEliminar,
+.btnEditar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s;
+}
+
+.btnEliminar {
+  background: #b1839e;
+}
+
+.btnEliminar:hover {
+  background: #c0392b;
+}
+
+.btnEditar {
+  background: #b7d77b;
+}
+
+.btnEditar:hover {
+  background: #2980b9;
+}
+
+/* tamaño de los íconos */
+.btnEliminar svg,
+.btnEditar svg {
+  font-size: 20px;
+}
+
+.sin-elementos {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}

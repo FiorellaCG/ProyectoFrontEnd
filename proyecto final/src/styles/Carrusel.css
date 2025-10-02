@@ -11,9 +11,10 @@
   font-weight: 800;
   margin: 0 0 10px;
   text-underline-offset: 6px;
+  text-align: center;
 }
 
-/* ---- CARRIL CON SCROLL ---- */
+/* Carril con scroll */
 .carousel__track {
   display: grid;
   grid-auto-flow: column;
@@ -22,7 +23,7 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 8px;
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin; 
 }
 
 .carousel__track::-webkit-scrollbar { height: 8px; }
@@ -38,7 +39,7 @@
   }
 }
 
-/* ---- TARJETA ---- */
+/* Tarjeta */
 .card {
   scroll-snap-align: start;
   background: #fff;
@@ -68,25 +69,23 @@
   padding: 14px 16px 16px;
 }
 
-/* ---- TIPOGRAFÍAS (CONDIMENTOS Y RECETAS) ---- */
-/* Nombre: más grande */
+/* Tipografias */
 .cond-nombre,
 .rec-nombre {
   margin: 0;
-  font-size: 1.2rem;    /* más grande */
+  font-size: 1.2rem;   
   font-weight: 800;
   line-height: 1.2;
 }
 
-/* Origen: un poco más pequeño y separado */
 .cond-origen,
 .rec-origen {
-  margin: 8px 0 0;      /* separación con el nombre */
-  font-size: 1rem;      /* más pequeño que el nombre */
+  margin: 8px 0 0;     
+  font-size: 1rem;    
   color: #666;
 }
 
-/* ---- FLECHAS LATERALES ---- */
+/* Flechas laterales */
 .carousel__nav {
   position: absolute;
   top: 50%;
@@ -109,4 +108,23 @@
 .carousel__nav:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.card--link { position: relative; }
+.card__link {
+  position: absolute;
+  inset: 0;              /* ocupa todo */
+  text-decoration: none; /* sin subrayado */
+  color: inherit;
+}
+.card--link:focus-within { outline: 2px solid #222; outline-offset: 4px; }
+
+.card.cond-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card.cond-card:visited {
+  color: inherit;
+  text-decoration: none;
 }

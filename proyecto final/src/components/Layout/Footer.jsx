@@ -6,29 +6,26 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="contenedor-footer">
-                {/* Logo y nombre */}
+                
                 <div className="footer-col">
                     <img src={logo} alt="Logo" className="footer-logo" />
                     <p className="footer-nombre">Condimentos la Guaria</p>
                 </div>
 
-                {/* WhatsApp */}
-                <div className="footer-col">
-                    <p className="footer-titulo"><b>WhatsApp</b></p>
-                    <p>Numero: 7015-0047</p>
-                </div>
-
-                {/* Email */}
                 <div className="footer-col">
                     <p className="footer-titulo"><b>Escríbenos</b></p>
-                    <p>laguaria@gmail.com</p>
+                    <p>Numero: 7015-0047</p>
+                    <p>Email: laguaria@gmail.com</p>
+                </div>
+                
+                <div className="footer-col">
+                    <p className="footer-titulo"><b>Nos encontramos en...</b></p>
+                    <p>Zapote, Calle Mora, San Jose</p>
+                    <p>Horario: Lunes a Viernes 8:00am - 5:00pm</p>
                 </div>
             </div>
 
-            {/* Línea inferior */}
-            <div className="footer-bottom">
-                <p>© {new Date().getFullYear()} Condimentos la Guaria • Hecho con ❤️ en CR</p>
-            </div>
+        
         </footer>
     )
 }

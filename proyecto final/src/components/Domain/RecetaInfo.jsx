@@ -7,10 +7,12 @@ function RecetaInfo({ onSaved }) {
   const [imagen, setImagen] = useState('');
   const [errores, setErrores] = useState({});
 
+  // Expresión regular para validar URLs de imágenes
   const urlRegex = /^(https?:\/\/).+\.(png|jpe?g|gif|webp|svg)$/i;
 
   const validar = () => {
     const e = {};
+    // Valida que no haya campos vacios
     if (!titulo.trim()) e.titulo = 'El título es obligatorio.';
     if (!descripcion.trim()) e.descripcion = 'La descripción es obligatoria.';
     if (!imagen.trim()) {
@@ -24,7 +26,6 @@ function RecetaInfo({ onSaved }) {
 
   const guardarReceta = async () => {
     if (!validar()) return;
-
     try {
       const nuevaReceta = { titulo, descripcion, imagen };
       await Services.postDatos('recetas', nuevaReceta);

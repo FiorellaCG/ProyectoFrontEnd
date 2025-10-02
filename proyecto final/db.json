@@ -1,13 +1,6 @@
 {
   "condimentos": [
     {
-      "id": "9916",
-      "nombre": "Curcuma ",
-      "beneficios": "Es muy saludable",
-      "origen": "India",
-      "imagen": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/04/02/curcuma-fresca-rallada.jpeg"
-    },
-    {
       "id": "dc7c",
       "nombre": "Anis estrella",
       "beneficios": "Propiedades digestivas: Ayuda a mejorar la digestión y aliviar cólicos estomacales. \nAntibacteriano y antiviral: Tiene propiedades que combaten bacterias y virus, lo que puede ayudar a fortalecer el sistema inmunológico. \nAlivio de la ansiedad y el estrés: Puede contribuir a reducir la ansiedad y el estrés. \nExpectorante: Ayuda a abrir las vías respiratorias y aliviar síntomas de resfriados.\nUso culinario: Es un ingrediente popular en la gastronomía, utilizado en diversas recetas y tisanas.",
@@ -27,6 +20,13 @@
       "beneficios": "Control de la Diabetes: La canela puede ayudar a regular los niveles de azúcar en sangre al mejorar la sensibilidad a la insulina. Esto es especialmente beneficioso para personas con prediabetes o diabetes tipo 2, ya que puede reducir los picos de glucosa después de las comidas. \nPropiedades Antioxidantes: Contiene compuestos antioxidantes, como los polifenoles, que ayudan a combatir el daño celular causado por los radicales libres. Esto puede contribuir a la prevención de enfermedades crónicas y al bienestar general. \nSalud Cardiovascular: La canela puede disminuir los niveles de colesterol LDL (colesterol \"malo\") y triglicéridos, mientras que eleva el colesterol HDL (colesterol \"bueno\"). Esto ayuda a prevenir enfermedades del corazón y mejora la salud arterial. \nPropiedades Antiinflamatorias: Los compuestos de la canela pueden ayudar a reducir la inflamación en el cuerpo, lo que es beneficioso para combatir enfermedades inflamatorias y mejorar la salud general. \nMejora de la Digestión: La canela puede ayudar a aliviar problemas digestivos, como la indigestión y los gases, gracias a sus propiedades carminativas y antiulcerosas. \nEfectos Antimicrobianos: La canela tiene propiedades que pueden combatir bacterias y hongos, lo que la convierte en un aliado para la salud bucal y la prevención de infecciones",
       "origen": "Sri Lanka (Ceilan)",
       "imagen": "https://spiceandcolour.com/wp-content/uploads/2021/03/1_Canela.jpg"
+    },
+    {
+      "id": "6c78",
+      "nombre": "Manzanilla",
+      "beneficios": "Alivio del Estrés y la Ansiedad: La manzanilla es ampliamente utilizada para reducir la ansiedad y el estrés. Sus propiedades calmantes ayudan a mejorar el estado de ánimo y a combatir síntomas de depresión, especialmente cuando se consume en infusión o se utiliza en aromaterapia. \n\nMejora del Sueño: Gracias a la apigenina, un antioxidante presente en la manzanilla, esta planta puede promover la somnolencia y mejorar la calidad del sueño. Estudios han demostrado que su consumo regular puede ayudar a combatir el insomnio. \n\nPropiedades Digestivas: La manzanilla es efectiva para aliviar molestias digestivas, como la distensión abdominal y los gases. Sus compuestos ayudan a relajar el tracto digestivo y a prevenir cólicos. \n\nEfecto Antiinflamatorio: Esta planta tiene propiedades antiinflamatorias que pueden beneficiar tanto el sistema digestivo como las vías respiratorias, ayudando a reducir la inflamación en el cuerpo. \n\nAlivio de Dolores Menstruales: La manzanilla puede ayudar a aliviar los cólicos menstruales gracias a sus efectos antiespasmódicos, proporcionando un alivio natural durante el ciclo menstrual.",
+      "origen": "Europa y Asia occidental",
+      "imagen": "https://imagenes.heraldo.es/uploads/imagenes/2024/07/10/manzanilla-gsc1.jpeg"
     }
   ],
   "recetas": [
@@ -76,6 +76,14 @@
       "nombre": "Luis",
       "apellido": "Perez",
       "email": "luis@gmail.com",
+      "contra": "123",
+      "rol": "user"
+    },
+    {
+      "id": "a611",
+      "nombre": "Pan",
+      "apellido": "Pan",
+      "email": "pan@gmail.com",
       "contra": "123"
     }
   ],
@@ -85,6 +93,18 @@
       "titulo": "Quino con crudites",
       "descripcion": "Lava la quinoa y escúrrela bien. Pon un cazo al fuego con el doble de agua salada que, de quinoa, y caliéntala hasta que llegue a ebullición.\nAñade la quinoa y cuécela a fuego medio y tapada durante 20 minutos; comprueba que no esté dura, y, si fuera así, prolonga la cocción unos minutos más. Pásala a un escurridor y deja que se seque bien del agua de cocción.\nPasa la quinoa a una ensaladera, añade la zanahoria, los pimientos, la cebolla y el apio, y salpimienta.\nRiega con un chorrito de aceite, espolvorea con las hierbas y remueve con cuidado; sirve enseguida.",
       "autor": "luis@gmail.com"
+    },
+    {
+      "id": "8030",
+      "titulo": "Pescado sudado al horno",
+      "descripcion": "Corta las papas en lonjas muy finas y ponlas como una cama en la bandeja que vas a usar.\nColoca encima las rodajas de pescado, les pones sal, y les rayas encima la cebolla y el pimiento, hazlo de manera generosa, que quede bien cubierta tal como se ve en la foto.\nFinalmente agrégale un chorro de aceite de oliva y llévalo al horno.\nEn 15-20 minutos va a estar listo para comer.",
+      "autor": "laguaria@gmail.com"
+    },
+    {
+      "id": "598a",
+      "titulo": "Papas al horno con verduras ",
+      "descripcion": "Precalienta el horno a 200 °C.\nLava bien las verduras. Pela las papas y zanahorias y córtalas en trozos medianos. El calabacín puede ir con piel, cortado en cubos similares.\nColoca todo en un bol grande y añade el aceite, el orégano, sal y pimienta. Mezcla bien para que el aliño impregne cada pieza.\nPasa las verduras a una bandeja de horno, repartidas en una sola capa.\nHornea durante 35-40 minutos, removiendo una vez a mitad del tiempo para que se doren de manera uniforme.\nRetira del horno y decora con hojas de albahaca fresca antes de servir.",
+      "autor": "fiochaves1303@gmail.com"
     }
   ]
 }

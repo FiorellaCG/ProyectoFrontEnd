@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import AdminIngreso from '../components/Domain/AdminIngreso';
 import '../styles/Admin.css';
-import CondimentoCarrusel from '../components/Domain/CondimentoCarrusel';
-import Condimentos from './Condimentos';
-import Crud from '../components/Domain/Crud';
 
 function Admin() {
   const [tipo, setTipo] = useState(null); // null = no se eligió nada aún

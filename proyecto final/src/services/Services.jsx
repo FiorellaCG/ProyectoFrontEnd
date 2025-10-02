@@ -64,21 +64,39 @@ async function putDatos(endpoint, id, datos) {
 }
 
 //Borrar datos
-async function eliminateDatos(id) {
+async function eliminateDatos(endpoint, id) {
     try {
         const respuesta = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" }
         });
         if (respuesta.ok) {
-            datos();
-            alert("Solicitud eliminada correctamente");
+            alert("Elemento eliminado correctamente");
+            return true;
         } else {
-            alert("Error al eliminar la solicitud");
+            alert("Error al eliminar el elemento");
+            return false;
         }
     } catch (error) {
         console.error("Error al eliminar datos:", error);
+        return false;
     }
 }
 
-export default { getDatos, postDatos, putDatos, eliminateDatos }
+// src/services/Services.js (añade esto)
+async function getById(endpoint, id) {
+  try {
+    const res = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    });
+    if (res.status === 404) return null;
+    if (!res.ok) throw new Error("Error al obtener por id");
+    return await res.json();
+  } catch (error) {
+    console.error("Error en getById:", error);
+    throw error;
+  }
+}
+
+export default { getDatos, postDatos, putDatos, eliminateDatos, getById };

@@ -1,88 +1,121 @@
-:root{
-  --bg: rgba(255,255,255,.9);
+:root {
+  --bg: rgba(255, 255, 255, 0.9);
   --border: #e5e7eb;
-  --text: #1f2937;        /* gris oscuro elegante */
+  --text: #1f2937;
   --muted: #6b7280;
-  --active-bg: #eef2ff;   /* fondo del enlace activo */
-  --active-text: #334155;
+  --active-bg: #f3f9f0; /* fondo sutil para activo */
+  --active-text: #af689c; /* morado personalizado */
+  --hover-bg: #f8fafc;
+  --btn-bg: #aed373; /* verde personalizado */
+  --btn-hover: #9cc562;
+  --transition: all 0.25s ease;
 }
 
-/* Barra superior pegada */
-header.nav{
+/* Barra superior fija */
+header.nav {
   position: sticky;
   top: 0;
   z-index: 50;
   background: var(--bg);
-  backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
-/* Contenedor centrado y fila principal */
-header.nav .container{
-  max-width: 1170px;
+/* Contenedor */
+header.nav .container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 26px;
+  padding: 14px 26px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
-/* Marca a la izquierda */
-header.nav .brand{
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: .2px;
-  color: var(--text);
+/* Logo */
+header.nav .logo-navbar img {
+  width: 42px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Nombre de la marca */
+header.nav .brand {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: var(--active-text);
   text-decoration: none;
-  white-space: nowrap;
+  transition: var(--transition);
+}
+header.nav .brand:hover {
+  color: var(--btn-bg);
+  transform: scale(1.03);
 }
 
-/* Quita morado/subrayado a todos los links dentro del header */
-header.nav a{
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Menú a la derecha, en una fila */
-header.nav .links{
+/* Menú */
+header.nav .links {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 6px;
-  /* En móviles que no quepan, permite scroll horizontal elegante */
+  gap: 10px;
   overflow-x: auto;
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none;
 }
-header.nav .links::-webkit-scrollbar{ 
-  display: none; 
-} 
+header.nav .links::-webkit-scrollbar {
+  display: none;
+}
 
-/* Estilo de cada link */
-header.nav .links a{
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
+/* Estilo de los enlaces */
+header.nav .links a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
   color: var(--text);
+  transition: var(--transition);
+  text-decoration: none; /* 👈 quitamos subrayado */
 }
-header.nav .links a:hover{
-  background: #f3f4f6;
-}
-
-/* ACTIVO con NavLink (usa aria-current) */
-header.nav .links a[aria-current="page"]{
-  background: var(--active-bg);
+header.nav .links a:hover {
+  background: var(--hover-bg);
   color: var(--active-text);
 }
 
-/* Opcional: último link (Admin) como pastilla sutil */
-
-header.nav .links a:last-child:hover{
-  filter: brightness(.98);
+/* Activo */
+header.nav .links a[aria-current="page"] {
+  background: var(--active-bg);
+  color: var(--active-text);
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px var(--active-text);
+  text-decoration: none; /* 👈 aseguramos que no tenga subrayado */
 }
 
-/* Pequeñas pantallas: reduce paddings */
-@media (max-width: 420px){
-  header.nav .container{ padding: 8px 12px; }
-  header.nav .links a{ padding: 8px 10px; }
+/* Último link estilo "botón login" */
+header.nav .links a:last-child {
+  background: var(--btn-bg);
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: var(--transition);
+  text-decoration: none; /* 👈 sin subrayado */
+}
+header.nav .links a:last-child:hover {
+  background: var(--btn-hover);
+  transform: translateY(-1px);
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  header.nav .container {
+    padding: 10px 14px;
+  }
+  header.nav .brand {
+    font-size: 18px;
+  }
+  header.nav .links a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

@@ -1,11 +1,15 @@
 import React from 'react'
-import {Link, NavLink} from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import '../../styles/Header.css'
+import logo from '../../img/Logo.png'
 
 function Navbar() {
   return (
     <header className="nav">
       <div className="container">
+        <div className="logo-navbar">
+          <img src={logo} alt="Logo" className="footer-logo" />
+        </div>
         <Link to="/home" className="brand">Condimentos la Guaria</Link>
         <nav className="links">
           <NavLink to="/condimentos">Condimentos</NavLink>

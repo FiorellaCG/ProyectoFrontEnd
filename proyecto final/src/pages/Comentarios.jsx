@@ -8,8 +8,8 @@ function Comentarios() {
   <div className="register-page">
       <div className="register-card">
         <div className="form-grid">
-          <Comment />
           <ComentariosVer />
+          <Comment />
         </div>
       </div>
     </div>

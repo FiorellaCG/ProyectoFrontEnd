@@ -1,3 +1,4 @@
+//CREAR CONDIMENTO
 import React, { useState } from 'react'
 import Services from '../../services/Services';
 
@@ -7,9 +8,10 @@ function CondimentoInfo({ onSaved }) {
   const [origen, setOrigen] = useState('');
   const [imagen, setImagen] = useState('');
   const [errores, setErrores] = useState({});
-
+  // Expresión regular para validar URLs de imágenes
   const urlRegex = /^(https?:\/\/).+\.(png|jpe?g|gif|webp|svg)$/i;
 
+ // Valida los campos del formulario
   const validar = () => {
     const e = {};
     if (!nombre.trim()) e.nombre = 'El nombre es obligatorio.';
@@ -26,7 +28,7 @@ function CondimentoInfo({ onSaved }) {
 
   const guardarCondimento = async () => {
     if (!validar()) return;
-
+    // Aquí puedes realizar la llamada a la API para guardar el condimento
     try {
       const nuevoCondimento = {
         nombre,
@@ -34,6 +36,8 @@ function CondimentoInfo({ onSaved }) {
         origen,
         imagen
       };
+
+      // Guardar en el servidor
       await Services.postDatos('condimentos', nuevoCondimento);
       // limpiar
       setNombre('');
@@ -55,61 +59,36 @@ function CondimentoInfo({ onSaved }) {
 
       <div className="form-field">
         <label className="form-label" htmlFor="nombre">Nombre</label>
-        <input
-          id="nombre"
-          className={`form-input ${errores.nombre ? 'is-invalid' : ''}`}
-          type="text"
-          placeholder="Ej: Cúrcuma"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          aria-invalid={!!errores.nombre}
-          aria-describedby={errores.nombre ? 'error-nombre' : undefined}
-        />
+        <input id="nombre" className={`form-input ${errores.nombre ? 'is-invalid' : ''}`}
+          type="text" placeholder="Ej: Cúrcuma" value={nombre} onChange={(e) => setNombre(e.target.value)}
+          aria-invalid={!!errores.nombre} aria-describedby={errores.nombre ? 'error-nombre' : undefined}/>
         {errores.nombre && <p id="error-nombre" className="error">{errores.nombre}</p>}
       </div>
 
       <div className="form-field">
         <label className="form-label" htmlFor="beneficios">Beneficios</label>
-        <textarea
-          id="beneficios"
-          className={`form-input form-textarea ${errores.beneficios ? 'is-invalid' : ''}`}
-          placeholder="Propiedades, usos saludables, etc."
-          rows={6}
-          value={beneficios}
-          onChange={(e) => setBeneficios(e.target.value)}
-          aria-invalid={!!errores.beneficios}
-          aria-describedby={errores.beneficios ? 'error-beneficios' : undefined}
-        />
+        <textarea id="beneficios" className={`form-input form-textarea ${errores.beneficios ? 'is-invalid' : ''}`}
+          placeholder="Propiedades, usos saludables, etc." rows={6} value={beneficios}
+          onChange={(e) => setBeneficios(e.target.value)} aria-invalid={!!errores.beneficios}
+          aria-describedby={errores.beneficios ? 'error-beneficios' : undefined}/>
         {errores.beneficios && <p id="error-beneficios" className="error">{errores.beneficios}</p>}
       </div>
 
       <div className="form-field">
         <label className="form-label" htmlFor="origen">Origen</label>
-        <input
-          id="origen"
-          className={`form-input ${errores.origen ? 'is-invalid' : ''}`}
-          type="text"
-          placeholder="Ej: India, Caribe, Costa Rica…"
-          value={origen}
-          onChange={(e) => setOrigen(e.target.value)}
-          aria-invalid={!!errores.origen}
-          aria-describedby={errores.origen ? 'error-origen' : undefined}
-        />
+        <input id="origen" className={`form-input ${errores.origen ? 'is-invalid' : ''}`}
+          type="text"  placeholder="Ej: India, Caribe, Costa Rica…"
+          value={origen} onChange={(e) => setOrigen(e.target.value)}
+          aria-invalid={!!errores.origen} aria-describedby={errores.origen ? 'error-origen' : undefined} />
         {errores.origen && <p id="error-origen" className="error">{errores.origen}</p>}
       </div>
 
       <div className="form-field">
         <label className="form-label" htmlFor="imagen">Imagen (URL)</label>
-        <input
-          id="imagen"
-          className={`form-input ${errores.imagen ? 'is-invalid' : ''}`}
-          type="url"
-          placeholder="https://ejemplo.com/curcuma.jpg"
-          value={imagen}
-          onChange={(e) => setImagen(e.target.value)}
-          aria-invalid={!!errores.imagen}
-          aria-describedby={errores.imagen ? 'error-imagen' : undefined}
-        />
+        <input id="imagen" className={`form-input ${errores.imagen ? 'is-invalid' : ''}`}
+          type="url" placeholder="https://ejemplo.com/curcuma.jpg"
+          value={imagen} onChange={(e) => setImagen(e.target.value)}
+          aria-invalid={!!errores.imagen} aria-describedby={errores.imagen ? 'error-imagen' : undefined} />
         {errores.imagen && <p id="error-imagen" className="error">{errores.imagen}</p>}
       </div>
 

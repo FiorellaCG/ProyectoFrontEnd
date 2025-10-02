@@ -1,0 +1,85 @@
+.condimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 90vh;
+  background-color: #f3f4f6;
+}
+
+.condimento__back-btn {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: #b1839e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.condimento__back-btn:hover {
+  background: #b1146f;;
+}
+
+.condimento__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.condimento__img-wrapper {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.condimento__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.condimento__placeholder {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.condimento__info {
+  text-align: left;
+}
+
+.condimento__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.condimento__origen {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.condimento-beneficios {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 10px;
+}
+

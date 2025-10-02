@@ -20,7 +20,7 @@ function ComentariosVer() {
 
     return (
         <div>
-            <h2 className='comments-title'>Comentarios Recientes</h2>
+            <h2 className='comments-title'>Pon tu receta!</h2>
             {comentarios.length === 0 ? (
                 <p>No hay comentarios aún.</p>
             ) : (
